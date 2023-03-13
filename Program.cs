@@ -14,8 +14,8 @@ static void addStudent()
         Console.WriteLine("Введите фамилию студента");
         string? Fname = Console.ReadLine();
         Console.WriteLine("Введите возраст студента");
-       // int? Age = parce Console.ReadLine();
-        db.Students.Add(new Student(name, Fname));
+        int Age = Int32.Parse( Console.ReadLine());
+        db.Students.Add(new Student(name, Fname, Age));
         db.SaveChanges();
     }
 }
