@@ -14,7 +14,7 @@ namespace Entity_Framework_Core_Code_first_forum_13_03_2023
         string connection;
         public StudentContext()
         {
-            connection = @" Data sourse = (localdb)\MSSQLocalDB; Initial catalog = School; integrated security = True";
+            connection = @" Data source = (localdb)\MSSQLLocalDB; Initial catalog = School; integrated security = True";
         }
 
         protected override void  OnConfiguring (DbContextOptionsBuilder optionsBilder)
